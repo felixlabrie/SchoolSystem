@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fella\\Code\\Student_System\\API\\API\\API\\API.csproj": {}
+    "C:\\Users\\fella\\Code\\SchoolSystemAPI\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fella\\Code\\Student_System\\API\\API\\API\\API.csproj": {
+    "C:\\Users\\fella\\Code\\SchoolSystemAPI\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fella\\Code\\Student_System\\API\\API\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\fella\\Code\\SchoolSystemAPI\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\fella\\Code\\Student_System\\API\\API\\API\\API.csproj",
+        "projectPath": "C:\\Users\\fella\\Code\\SchoolSystemAPI\\API\\API.csproj",
         "packagesPath": "C:\\Users\\fella\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fella\\Code\\Student_System\\API\\API\\API\\obj\\",
+        "outputPath": "C:\\Users\\fella\\Code\\SchoolSystemAPI\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fella\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,42 +39,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.2.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.414\\RuntimeIdentifierGraph.json"
         }
       }
     }
