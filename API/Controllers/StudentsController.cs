@@ -35,7 +35,7 @@ namespace API.Controllers
 
         [HttpGet]
         [Route("{id}")]
-        public async Task<IActionResult> GetStudent([FromRoute]int id)
+        public async Task<IActionResult> GetStudent([FromRoute] int id)
         {
             var student = await _studentSystemDbContext.Students.FirstOrDefaultAsync(x => x.id == id);
             if (student == null)
@@ -44,6 +44,33 @@ namespace API.Controllers
             }
             return Ok(student);
         }
+
+        [HttpGet]
+        [Route("/lastname/{lastName}")]
+        public async Task<IActionResult> GetStudentsByLastName([FromRoute] string lastName)
+        {
+            var students = await _studentSystemDbContext.Students.Where(x => x.lastName == lastName).ToListAsync();
+            //var students = await _studentSystemDbContext.Students.;
+                //.FirstOrDefaultAsync(x => x.lastName == lastName);
+            if (students == null)
+            {
+                return NotFound();
+            }
+            return Ok(students);
+        }
+
+        [HttpGet]
+        [Route("/firstname/{firstName}/graddate/{gradDate}")]
+        public async Task<IActionResult> GetStudentsByFirstNameAndGradDate([FromRoute] string firstName, string gradDate)
+        {
+            var students = await _studentSystemDbContext.Students.Where(x => x.firstName == firstName).Where(x => x.gradDate == gradDate).ToListAsync();
+            if (students == null)
+            {
+                return NotFound();
+            }
+            return Ok(students);
+        }
+        
 
         [HttpPut]
         [Route("{id}")]
